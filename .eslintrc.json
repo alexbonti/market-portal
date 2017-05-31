@@ -1,0 +1,52 @@
+{
+  "root": true,
+  "parser": "babel-eslint",
+  "extends": [
+    "airbnb",
+    "plugin:flowtype/recommended",
+    "prettier",
+    "prettier/react"
+  ],
+  "plugins": [
+    "react",
+    "import",
+    "flowtype",
+    "flowtype-errors",
+    "prettier"
+  ],
+  "rules": {
+    "no-console": "off",
+    "no-param-reassign": [ "error", { "props": false } ],
+    "no-underscore-dangle": [ "warn", { "allow": [ "_id", "_rev", "_path" ] } ],
+    "no-unused-vars": [ "warn", { "vars": "local", "args": "none" } ],
+    "no-unused-expressions": [ "error", { "allowTernary": true } ],
+    "no-plusplus": [ "error", { "allowForLoopAfterthoughts": true } ],
+    "no-duplicate-imports": 0,
+    "handle-callback-err": "error",
+    "valid-jsdoc": [
+      "error",
+      {
+        "prefer": {
+          "arg": "param",
+          "return": " returns"
+        },
+        "requireReturnType": false,
+        "requireReturn": false
+      }
+    ],
+    "import/no-extraneous-dependencies": ["error", {"devDependencies": ["**/*.spec.js", "**/*.config.js", "**/test/**/*.js"]}],
+    "react/prefer-stateless-function": [ "error", { "ignorePureComponents": true } ],
+    "react/jsx-filename-extension": [ 1, { "extensions": [ ".js", ".jsx" ] } ],
+    "react/prop-types": "off",
+    "prettier/prettier": [
+      "error", {
+        "tabWidth": 4,
+        "semi": false,
+        "singleQuote": true,
+        "trailingComma": "es5",
+        "printWidth": 120
+      }
+    ],
+    "flowtype-errors/show-errors": 2
+  }
+}

@@ -1,0 +1,22 @@
+# Intellij
+.idea
+
+# npm files
+node_modules
+npm-debug.log
+
+# git filess
+.git
+.gitignore
+
+# make files
+Makefile
+.build_image
+
+# Mac OS trash can files 
+.DS_Store
+
+# Travis files
+private
+.travis.yml
+
